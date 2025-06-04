@@ -1,9 +1,9 @@
 all:
-	mkdir bin/
+	mkdir -p bin/
 	cd src/ && make
 	cd src/ && make clean
 clean:
-	rm -r bin/
+	rm -rf bin/
 
 run:
 	cd bin && ./words
